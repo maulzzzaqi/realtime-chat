@@ -1,4 +1,4 @@
 <div>
     {{-- Be like water. --}}
-    send message
+    <div class="chatbox_footer"></div>
 </div>
