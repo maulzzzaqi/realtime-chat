@@ -24,14 +24,28 @@
     </div>
 
     <div class="chatbox_body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Nam fuga molestiae quam eos iste nihil rerum dignissimos maiores hic sit,
-        fugit fugiat quisquam omnis, repudiandae dicta nesciunt sapiente blanditiis magnam!
-
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-        Vitae fuga repudiandae facilis quibusdam iste necessitatibus quos voluptates earum, 
-        modi temporibus praesentium repellendus officiis recusandae? Corporis autem delectus 
-        velit quia eveniet.
+        <div class="msg_body msg_body_receiver">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dignissimos necessitatibus veritatis, omnis sint illo. Distinctio, consequuntur doloremque. Magnam incidunt tempora expedita placeat natus vero suscipit rem, numquam adipisci voluptatibus?
+            <div class="msg_body_footer">
+                <div class="date">
+                    1 Week Ago
+                </div>
+                <div class="read">
+                    <i class="bi bi-check"></i>
+                </div>
+            </div>
+        </div>
+        <div class="msg_body msg_body_me">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dignissimos necessitatibus veritatis, omnis sint illo. Distinctio, consequuntur doloremque. Magnam incidunt tempora expedita placeat natus vero suscipit rem, numquam adipisci voluptatibus?
+            <div class="msg_body_footer">
+                <div class="date">
+                    1 Week Ago
+                </div>
+                <div class="read">
+                    <i class="bi bi-check"></i>
+                </div>
+            </div>
+        </div>
     </div>
 
     
