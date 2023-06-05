@@ -21,6 +21,10 @@
         <link rel="stylesheet" href="{{ asset('css/chat.css') }}">
         <script src="{{ asset('js/app.js') }}" defer></script>
 
+        <script>
+            localStorage.theme = 'light'
+        </script>
+
         @livewireStyles
     </head>
     <body class="font-sans antialiased">
