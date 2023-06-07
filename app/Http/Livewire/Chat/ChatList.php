@@ -12,7 +12,18 @@ class ChatList extends Component
     public $receiverInstance;
     public $auth_id;
     public $conversations;
+    public $selectedConversation;
     public $name;
+
+    protected $listeners = ['chatUserSelected'];
+
+    public function chatUserSelected(Conversation $conversation, $receiverId){
+        // dd($conversation, $receiverId);
+        $this->selectedConversation = $conversation;
+        $this->receiverInstance = User::find($receiverId);
+
+        dd($this->selectedConversation, $this->receiverInstance);
+    }
 
     public function getChatUserInstance(Conversation $conversation, $request){
         $this->auth_id = auth()->id();
