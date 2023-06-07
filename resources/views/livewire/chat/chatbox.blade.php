@@ -25,7 +25,7 @@
 
     <div class="chatbox_body">
         <div class="msg_body msg_body_receiver">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dignissimos necessitatibus veritatis, omnis sint illo. Distinctio, consequuntur doloremque. Magnam incidunt tempora expedita placeat natus vero suscipit rem, numquam adipisci voluptatibus?
+            Barang ready mas?
             <div class="msg_body_footer">
                 <div class="date">
                     1 Week Ago
@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class="msg_body msg_body_me">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dignissimos necessitatibus veritatis, omnis sint illo. Distinctio, consequuntur doloremque. Magnam incidunt tempora expedita placeat natus vero suscipit rem, numquam adipisci voluptatibus?
+            Abis
             <div class="msg_body_footer">
                 <div class="date">
                     1 Week Ago
