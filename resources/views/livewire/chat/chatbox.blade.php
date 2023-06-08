@@ -1,14 +1,16 @@
 <div>
     {{-- To attain knowledge, add things every day; To attain wisdom, subtract things every day. --}}
+
+    @if ($selectedConversation)
     <div class="chatbox_header">
         <div class="return">
             <i class="bi bi-arrow-left"></i>
         </div>
         <div class="img_container">
-            <img src="https://picsum.photos/id/237/200/300" alt="">
+            <img src="https://picsum.photos/id/{{ $receiverInstance->id }}/200/300" alt="">
         </div>
         <div class="name">
-            Zirjy
+            {{ $receiverInstance->name }}
         </div>
         <div class="info">
             <div class="info_item">
@@ -24,29 +26,26 @@
     </div>
 
     <div class="chatbox_body">
-        <div class="msg_body msg_body_receiver">
-            Barang ready mas?
-            <div class="msg_body_footer">
-                <div class="date">
-                    1 Week Ago
-                </div>
-                <div class="read">
-                    <i class="bi bi-check"></i>
-                </div>
-            </div>
-        </div>
-        <div class="msg_body msg_body_me">
-            Abis
-            <div class="msg_body_footer">
-                <div class="date">
-                    1 Week Ago
-                </div>
-                <div class="read">
-                    <i class="bi bi-check"></i>
-                </div>
-            </div>
-        </div>
-    </div>
 
+        @foreach ($messages as $message)
+        <div class="msg_body msg_body_receiver">
+            {{ $message->body }}
+            <div class="msg_body_footer">
+                <div class="date">
+                    {{ $message->created_at->format('m:i a') }}
+                </div>
+                <div class="read">
+                    <i class="bi bi-check"></i>
+                </div>
+            </div>
+        </div>    
+        @endforeach
+
+    </div>
+    @else
+    <div class="fs-4 text-center text-primary mt-5">
+        No Conversation Selected
+    </div>
+    @endif
     
 </div>
