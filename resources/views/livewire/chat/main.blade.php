@@ -16,6 +16,8 @@
             if (window.innerWidth < 768) {
                 $('.chat_list_container').hide();
                 $('.chat_box_container').show();
+            } else {
+                $('.return').hide();
             }
         })
 
@@ -23,6 +25,7 @@
             if (window.innerWidth > 768) {
                 $('.chat_list_container').show();
                 $('.chat_box_container').show();
+                $('.return').hide();
             }
         })
 

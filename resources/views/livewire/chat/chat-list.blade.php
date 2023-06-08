@@ -5,7 +5,7 @@
             Chat
         </div>
         <div class="img_container">
-            <img src="https://picsum.photos/id/237/200/300">
+            <img src="https://ui-avatars.com/api/?background=0D8ABC&color=fff&name={{ auth()->user()->name }}">
         </div>
     </div>
 
@@ -15,7 +15,7 @@
     <div class="chatlist_body" wire:click="$emit('chatUserSelected', {{ $conversation }}, {{ $this->getChatUserInstance($conversation, $name = 'id') }})">
         <div class="chatlist_item">
             <div class="chatlist_img_container">
-                <img src="https://picsum.photos/id/{{ $this->getChatUserInstance($conversation, $name = 'id') }}/200/300" alt="">
+                <img src="https://ui-avatars.com/api/?name={{ $this->getChatUserInstance($conversation, $name = 'name') }}" alt="">
             </div>
             <div class="chatlist_info">
                 <div class="top_row">
