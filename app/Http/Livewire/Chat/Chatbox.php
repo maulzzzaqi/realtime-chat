@@ -14,7 +14,12 @@ class Chatbox extends Component
     public $messageCount;
     public $messages;
     public $paginateVar = 10;
-    public $listeners = ['loadConversation'];
+    public $listeners = ['loadConversation', 'pushMessage'];
+
+    public function pushMessage($messageId){
+        $newMessage =  Message::find($messageId);
+        $this->messages->push($newMessage);
+    }
 
     public function loadConversation(Conversation $conversation, User $receiver){
         $this->selectedConversation = $conversation;
